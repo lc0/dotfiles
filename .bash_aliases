@@ -44,7 +44,7 @@ export TERM=xterm-256color
 #    alias pup="source /var/www/dev/environment/bin/activate; cd ~/puppet"
 #fi
 
-alias dev="workon core; cd src/stylightcore/src/stylight/"
+#alias dev="workon core; cd src/stylightcore/src/stylight/"
 
 # Comparing dottet version numbers
 # see: http://bkhome.org/blog/?viewDetailed=02199
@@ -74,6 +74,7 @@ if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
     debian_chroot=$(cat /etc/debian_chroot)
 fi
 
+export PROMPT_DIRTRIM=2
 PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w\$(parse_git_branch)\$ "
 
 # Taken from .bashrc

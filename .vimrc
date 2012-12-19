@@ -31,9 +31,9 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-git'
 
 " Completion
-Bundle 'davidhalter/jedi-vim'
-let g:jedi#popup_on_dot = 0
-let g:jedi#use_tabs_not_buffers = 0
+"Bundle 'davidhalter/jedi-vim'
+"let g:jedi#popup_on_dot = 0
+"let g:jedi#use_tabs_not_buffers = 0
 
 Bundle 'ervandew/supertab'
 let g:SuperTabLongestHighlight = 1
@@ -67,7 +67,7 @@ Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-markdown'
 
 " Edit helpers.
-Bundle 'myusuf3/numbers.vim'
+"Bundle 'myusuf3/numbers.vim'
 
 Bundle 'UltiSnips'
 Bundle 'SQLUtilities'
@@ -107,7 +107,6 @@ set expandtab
 set noerrorbells
 set smartindent
 set ruler
-set relativenumber
 set ttyfast
 set autoread
 set more
